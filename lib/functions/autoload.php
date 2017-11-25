@@ -19,6 +19,7 @@ function wst_load_nonadmin_files() {
 		'structure/sidebar.php',
 		'structure/menu.php',
 		'structure/footer.php',
+		'structure/archive.php',
 	);
 	wst_load_specified_files( $filenames );
 }

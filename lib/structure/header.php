@@ -20,6 +20,9 @@ function wst_set_up_header_structure() {
 
 	add_action( 'beans_header_after_markup', 'wst_display_hero_area' );
 	function wst_display_hero_area() {
+		if(is_home()){
+			return;
+		}
 		$context   = Timber::get_context();
 		$templates = array( 'hero.twig' );
 		Timber::render( $templates, $context );

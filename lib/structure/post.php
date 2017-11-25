@@ -9,12 +9,12 @@ add_action( 'wp', 'wst_set_up_post_structure' );
  * @return void
  */
 function wst_set_up_post_structure() {
-
+	//Remove featured image (it will appear in hero area)
+	beans_remove_action('beans_post_image');
 	if ( is_page() ) {
 		//Remove title only on pages
 		beans_remove_action( 'beans_post_title' );
-		//Remove featured image on pages
-		beans_remove_action('beans_post_image');
+
 		//remove comments from pages
 		remove_post_type_support( 'page', 'comments' );
 	}

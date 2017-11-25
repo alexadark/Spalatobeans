@@ -50,7 +50,7 @@ Fonts
  */
 html {
   /* 1 */
-  font: 300 16px / 1.5 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px / 1.5 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -84,13 +84,13 @@ a:hover {
  */
 a,
 .uk-link {
-  color: #ED7365;
+  color: #E91E63;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover,
 .uk-link:hover {
-  color: #e84937;
+  color: #c1134e;
   text-decoration: none;
 }
 /* Text-level semantics
@@ -268,11 +268,11 @@ h4,
 h5,
 h6 {
   margin: 0 0 25px 0;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #444;
   text-transform: none;
-  color: #ED7365;
+  color: #E91E63;
   margin-bottom: 15px;
 }
 /*
@@ -389,12 +389,12 @@ pre {
 /* Selection pseudo-element
  ========================================================================== */
 ::-moz-selection {
-  background: #ED7365;
+  background: #E91E63;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #ED7365;
+  background: #E91E63;
   color: #fff;
   text-shadow: none;
 }
@@ -1413,7 +1413,7 @@ iframe {
  * Sub-modifier: `uk-panel-box-primary`
  */
 .uk-panel-box-primary {
-  background-color: #ffffff;
+  background-color: #facfdd;
   color: #2d7091;
 }
 .uk-panel-box-primary-hover:hover {
@@ -1442,7 +1442,7 @@ iframe {
   color: #444;
 }
 .uk-panel-hover:hover {
-  background: #ffffff;
+  background: #facfdd;
   color: #444;
 }
 .uk-panel-hover .uk-panel-badge {
@@ -1599,12 +1599,12 @@ iframe {
  * Vertical gutter for articles
  */
 .uk-article + .uk-article {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 /* Sub-object `uk-article-title`
  ========================================================================== */
 .uk-article-title {
-  font-size: 47px;
+  font-size: 36px;
   line-height: 42px;
   font-weight: normal;
   text-transform: none;
@@ -2056,7 +2056,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   color: #444;
   font-size: 16px;
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 /* Appear not as link */
@@ -2073,7 +2073,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-open > a {
   background-color: transparent;
-  color: #ED7365;
+  color: #E91E63;
   /* 3 */
   outline: none;
 }
@@ -2085,7 +2085,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
   background-color: transparent;
-  color: #ED7365;
+  color: #E91E63;
 }
 /* Sub-objects: `uk-navbar-nav-subtitle`
  ========================================================================== */
@@ -2137,7 +2137,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #07D;
 }
 .uk-navbar-content > a:not([class]):hover {
-  color: #ED7365;
+  color: #E91E63;
 }
 /* Sub-objects: `uk-navbar-brand`
  ========================================================================== */
@@ -2427,7 +2427,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-radius: 0;
   padding: 10px;
   font-weight: 400;
-  color: #ED7365;
+  color: #E91E63;
   font-size: 14px;
 }
 /*
@@ -2448,7 +2448,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #444;
   /* 2 */
   outline: none;
-  background: #ED7365;
+  background: #E91E63;
   color: #fff;
 }
 /* OnClick */
@@ -2460,7 +2460,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  * Active
  */
 .uk-pagination > .uk-active > span {
-  background: #ED7365;
+  background: #E91E63;
   color: #fff;
 }
 /*
@@ -3165,7 +3165,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-form input[type="tel"],
 .uk-form input[type="color"] {
   /* 1 */
-  height: 30px;
+  height: 45px;
   /* 2 */
   max-width: 100%;
   /* 3 */
@@ -3522,27 +3522,29 @@ select.uk-form-width-mini {
   display: inline-block;
   box-sizing: border-box;
   padding: 0 20px;
-  background: #ED7365;
+  background: #E91E63;
   vertical-align: middle;
   /* 8 */
   line-height: 40px;
   /* 9 */
   min-height: 40px;
   /* 10 */
-  font-size: 1rem;
+  font-size: 12px;
   /* 11 */
   text-decoration: none;
   text-align: center;
-  border: 2px solid #ED7365;
-  border-radius: 0;
+  border: 2px solid #E91E63;
+  border-radius: 2px;
   background-color: transparent;
-  color: #ED7365;
-  background-image: -webkit-linear-gradient(top, transparent 50%, #ED7365 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, #ED7365 50%);
-  background-position: 0% 0%;
-  background-size: 210%;
-  -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out;
-  transition: background 200ms ease-in-out, color 200ms ease-in-out;
+  color: #E91E63;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .uk-button:not(:disabled) {
   cursor: pointer;
@@ -3555,18 +3557,17 @@ select.uk-form-width-mini {
  */
 .uk-button:hover,
 .uk-button:focus {
-  background-color: #e84937;
+  background-color: #c1134e;
+  color: #fff;
   /* 2 */
   outline: none;
   /* 3 */
   text-decoration: none;
-  color: #fff;
-  background-position: 0 98%;
 }
 /* Active */
 .uk-button:active,
 .uk-button.uk-active {
-  background-color: #ED7365;
+  background-color: #E91E63;
   color: #fff;
 }
 /* Color modifiers
@@ -3575,19 +3576,20 @@ select.uk-form-width-mini {
  * Modifier: `uk-button-primary`
  */
 .uk-button-primary {
-  background-color: #00a8e6;
+  background-color: #E91E63;
   color: #fff;
+  border: none;
 }
 /* Hover */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #35b3ee;
+  background-color: #c1134e;
   color: #fff;
 }
 /* Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #0091ca;
+  background-color: #E91E63;
   color: #fff;
 }
 /*
@@ -3650,13 +3652,13 @@ select.uk-form-width-mini {
 }
 /* Color */
 .uk-button-link {
-  color: #07D;
+  color: #E91E63;
 }
 .uk-button-link:hover,
 .uk-button-link:focus,
 .uk-button-link:active,
 .uk-button-link.uk-active {
-  color: #059;
+  color: #c1134e;
   text-decoration: underline;
 }
 .uk-button-link:disabled {
@@ -5931,7 +5933,7 @@ select.uk-form-width-mini {
   opacity: 0.7;
 }
 .uk-close-alt:hover {
-  background: #ED7365;
+  background: #E91E63;
 }
 .uk-close-alt:hover,
 .uk-close-alt:focus {
@@ -7233,6 +7235,10 @@ a.uk-thumbnail:focus {
   font-size: 1rem;
   vertical-align: top;
 }
+/* Focus */
+.uk-dropdown:focus {
+  outline: none;
+}
 /*
  * 1. Show dropdown
  * 2. Set animation
@@ -7682,7 +7688,7 @@ a.uk-thumbnail:focus {
   /* 2 */
   width: 270px;
   max-width: 100%;
-  background: #ED7365;
+  background: #E91E63;
   /* 3 */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -8892,11 +8898,6 @@ a.uk-thumbnail:focus {
     page-break-after: avoid;
   }
 }
-.angle {
-  width: 0;
-  height: 0;
-  position: relative;
-}
 .tm-overlay-layla .uk-overlay > .uk-overlay-panel {
   padding: 25px;
 }
@@ -8979,6 +8980,53 @@ a.uk-thumbnail:focus {
 .uk-animation-2 {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+}
+input[type="button"] {
+  /* 1 */
+  -webkit-appearance: none;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  /* 4 */
+  overflow: visible;
+  /* 5 */
+  font: inherit;
+  /* 6 */
+  text-transform: none;
+  /* 7 */
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background: #E91E63;
+  vertical-align: middle;
+  /* 8 */
+  line-height: 40px;
+  /* 9 */
+  min-height: 40px;
+  /* 10 */
+  font-size: 12px;
+  /* 11 */
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #E91E63;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #E91E63;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #E91E63;
+  color: #fff;
+  border: none;
+  color: #fff !important;
+}
+input[type="button"]:hover {
+  background: #c1134e;
 }
 /* Icon */
 .uk-close:after {
@@ -9115,7 +9163,7 @@ a.uk-thumbnail:focus {
   border-bottom: 1px solid #ededed;
 }
 .uk-nav-dropdown > li > a:hover {
-  background-color: #ED7365;
+  background-color: #E91E63;
 }
 .uk-nav-dropdown > li:last-of-type > a {
   border-bottom: none;
@@ -9127,7 +9175,7 @@ a.uk-thumbnail:focus {
   color: #777777;
 }
 .uk-nav-dropdown ul a:hover {
-  color: #ED7365;
+  color: #E91E63;
 }
 .uk-nav-offcanvas > li > a,
 .uk-nav-offcanvas ul a {
@@ -9245,6 +9293,554 @@ Component: Slidenav
 .uk-slidenav-contrast:active {
   color: rgba(255, 255, 255, 0.9);
 }
+/* ========================================================================
+   Component: Form
+ ========================================================================== */
+/*
+ * 1. Define consistent box sizing.
+ *    Default is `content-box` with following exceptions set to `border-box`
+ *    `button`, `select`, `input[type="checkbox"]` and `input[type="radio"]`
+ *    `input[type="search"]` in Chrome, Safari and Opera
+ *    `input[type="color"]` in Firefox
+ * 2. Address margins set differently in Firefox/IE and Chrome/Safari/Opera.
+ * 3. Remove `border-radius` in iOS.
+ * 4. Correct `font` properties and `color` not being inherited.
+ */
+.uk-form input,
+.uk-form select,
+.uk-form textarea,
+input {
+  /* 1 */
+  box-sizing: border-box;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  border-radius: 0 !important;
+  /* 4 */
+  font: inherit;
+  color: inherit;
+}
+/*
+ * Address inconsistent `text-transform` inheritance which is only inherit in Firefox
+ */
+.uk-form select {
+  text-transform: none;
+}
+/*
+ * 1. Correct `font` properties not being inherited.
+ * 2. Don't inherit the `font-weight` and use `bold` instead.
+ * NOTE: Both declarations don't work in Chrome, Safari and Opera.
+ */
+.uk-form optgroup {
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  font-weight: bold;
+}
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+.uk-form input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * Removes excess padding in IE 8/9/10.
+ */
+.uk-form input[type="checkbox"],
+.uk-form input[type="radio"] {
+  padding: 0;
+}
+/*
+ * Improves consistency of cursor style for clickable elements
+ */
+.uk-form input[type="checkbox"]:not(:disabled),
+.uk-form input[type="radio"]:not(:disabled) {
+  cursor: pointer;
+}
+/*
+ * Remove default style in iOS.
+ */
+.uk-form textarea,
+.uk-form input:not([type]),
+.uk-form input[type="text"],
+.uk-form input[type="password"],
+.uk-form input[type="email"],
+.uk-form input[type="url"],
+.uk-form input[type="search"],
+.uk-form input[type="tel"],
+.uk-form input[type="number"],
+.uk-form input[type="datetime"] {
+  -webkit-appearance: none;
+}
+/*
+ * Remove inner padding and search cancel button in Chrome, Safari and Opera on OS X.
+ */
+.uk-form input[type="search"]::-webkit-search-cancel-button,
+.uk-form input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+.uk-form input[type="number"]::-webkit-inner-spin-button,
+.uk-form input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/*
+ * Define consistent border, margin, and padding.
+ */
+.uk-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * 1. Remove default vertical scrollbar in IE 8/9/10/11.
+ * 2. Improve readability and alignment in all browsers.
+ */
+.uk-form textarea {
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  vertical-align: top;
+}
+/*
+ * Removes placeholder transparency in Firefox.
+ */
+.uk-form ::-moz-placeholder {
+  opacity: 1;
+}
+/*
+ * Removes `box-shadow` for invalid controls in Firefox.
+ */
+.uk-form :invalid {
+  box-shadow: none;
+}
+/*
+ * Vertical alignment
+ */
+.uk-form input:not([type="radio"]):not([type="checkbox"]),
+.uk-form select {
+  vertical-align: middle;
+}
+/* Style
+ ========================================================================== */
+/*
+ * Remove margin from the last-child
+ */
+.uk-form > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Controls
+ * Except for `range`, `radio`, `checkbox`, `file`, `submit`, `reset`, `button` and `image`
+ * 1. Must be `height` because `min-height` is not working in OSX
+ * 2. Responsiveness: Sets a maximum width relative to the parent to scale on narrower viewports
+ * 3. Vertical `padding` needed for `select` elements in Firefox
+ * 4. Style
+ */
+.uk-form select,
+.uk-form textarea,
+.uk-form input:not([type]),
+.uk-form input[type="text"],
+.uk-form input[type="password"],
+.uk-form input[type="datetime"],
+.uk-form input[type="datetime-local"],
+.uk-form input[type="date"],
+.uk-form input[type="month"],
+.uk-form input[type="time"],
+.uk-form input[type="week"],
+.uk-form input[type="number"],
+.uk-form input[type="email"],
+.uk-form input[type="url"],
+.uk-form input[type="search"],
+.uk-form input[type="tel"],
+.uk-form input[type="color"] {
+  /* 1 */
+  height: 45px;
+  /* 2 */
+  max-width: 100%;
+  /* 3 */
+  padding: 4px 6px;
+  /* 4 */
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #444;
+  -webkit-transition: all 0.2s linear;
+  -webkit-transition-property: border, background, color, box-shadow, padding;
+  transition: all 0.2s linear;
+  transition-property: border, background, color, box-shadow, padding;
+}
+.uk-form select:focus,
+.uk-form textarea:focus,
+.uk-form input:not([type]):focus,
+.uk-form input[type="text"]:focus,
+.uk-form input[type="password"]:focus,
+.uk-form input[type="datetime"]:focus,
+.uk-form input[type="datetime-local"]:focus,
+.uk-form input[type="date"]:focus,
+.uk-form input[type="month"]:focus,
+.uk-form input[type="time"]:focus,
+.uk-form input[type="week"]:focus,
+.uk-form input[type="number"]:focus,
+.uk-form input[type="email"]:focus,
+.uk-form input[type="url"]:focus,
+.uk-form input[type="search"]:focus,
+.uk-form input[type="tel"]:focus,
+.uk-form input[type="color"]:focus {
+  border-color: #99baca;
+  outline: 0;
+  background: #f5fbfe;
+  color: #444;
+}
+.uk-form select:disabled,
+.uk-form textarea:disabled,
+.uk-form input:not([type]):disabled,
+.uk-form input[type="text"]:disabled,
+.uk-form input[type="password"]:disabled,
+.uk-form input[type="datetime"]:disabled,
+.uk-form input[type="datetime-local"]:disabled,
+.uk-form input[type="date"]:disabled,
+.uk-form input[type="month"]:disabled,
+.uk-form input[type="time"]:disabled,
+.uk-form input[type="week"]:disabled,
+.uk-form input[type="number"]:disabled,
+.uk-form input[type="email"]:disabled,
+.uk-form input[type="url"]:disabled,
+.uk-form input[type="search"]:disabled,
+.uk-form input[type="tel"]:disabled,
+.uk-form input[type="color"]:disabled {
+  border-color: #ddd;
+  background-color: #f5f5f5;
+  color: #999;
+}
+/*
+ * Placeholder
+ */
+.uk-form :-ms-input-placeholder {
+  color: #999 !important;
+}
+.uk-form ::-moz-placeholder {
+  color: #999;
+}
+.uk-form ::-webkit-input-placeholder {
+  color: #999;
+}
+.uk-form :disabled:-ms-input-placeholder {
+  color: #999 !important;
+}
+.uk-form :disabled::-moz-placeholder {
+  color: #999;
+}
+.uk-form :disabled::-webkit-input-placeholder {
+  color: #999;
+}
+/*
+ * Legend
+ * 1. Behave like block element
+ * 2. Correct `color` not being inherited in IE 8/9/10/11.
+ * 3. Remove padding
+ * 4. `margin-bottom` is not working in Safari and Opera.
+ *    Using `padding` and :after instead to create the border
+ * 5. Style
+ */
+.uk-form legend {
+  /* 1 */
+  width: 100%;
+  /* 2 */
+  border: 0;
+  /* 3 */
+  padding: 0;
+  /* 4 */
+  padding-bottom: 15px;
+  /* 5 */
+  font-size: 18px;
+  line-height: 30px;
+}
+/*
+ * 1. Fixes IE9
+ */
+.uk-form legend:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ddd;
+  /* 1 */
+  width: 100%;
+}
+/* Size modifiers
+ * Higher specificity needed to override defaults
+ ========================================================================== */
+select.uk-form-small,
+textarea.uk-form-small,
+input[type].uk-form-small,
+input:not([type]).uk-form-small {
+  height: 25px;
+  padding: 3px 3px;
+  font-size: 12px;
+}
+select.uk-form-large,
+textarea.uk-form-large,
+input[type].uk-form-large,
+input:not([type]).uk-form-large {
+  height: 40px;
+  padding: 8px 6px;
+  font-size: 16px;
+}
+/* Reset height
+ * Must be after size modifiers
+ ========================================================================== */
+.uk-form textarea,
+.uk-form select[multiple],
+.uk-form select[size] {
+  height: auto;
+}
+/* Validation states
+ * Using !important to keep the selector simple
+ ========================================================================== */
+/*
+ * Error state
+ */
+.uk-form-danger {
+  border-color: #dc8d99 !important;
+  background: #fff7f8 !important;
+  color: #d85030 !important;
+}
+/*
+ * Success state
+ */
+.uk-form-success {
+  border-color: #8ec73b !important;
+  background: #fafff2 !important;
+  color: #659f13 !important;
+}
+/* Style modifiers
+ * Using !important to keep the selector simple
+ ========================================================================== */
+/*
+ * Blank form
+ */
+.uk-form-blank {
+  border-color: transparent !important;
+  border-style: dashed !important;
+  background: none !important;
+}
+.uk-form-blank:focus {
+  border-color: #ddd !important;
+}
+/* Size sub-modifiers
+ ========================================================================== */
+/*
+ * Fixed widths
+ * Different widths for mini sized `input` and `select` elements
+ */
+input.uk-form-width-mini {
+  width: 40px;
+}
+select.uk-form-width-mini {
+  width: 65px;
+}
+.uk-form-width-small {
+  width: 130px;
+}
+.uk-form-width-medium {
+  width: 200px;
+}
+.uk-form-width-large {
+  width: 500px;
+}
+/* Sub-objects: `uk-form-row`
+ * Groups labels and controls in rows
+ ========================================================================== */
+/*
+ * Micro clearfix
+ * Needed for `uk-form-horizontal` modifier
+ */
+.uk-form-row:before,
+.uk-form-row:after {
+  content: "";
+  display: table;
+}
+.uk-form-row:after {
+  clear: both;
+}
+/*
+ * Vertical gutter
+ */
+.uk-form-row + .uk-form-row {
+  margin-top: 15px;
+}
+/* Help text
+ * Sub-object: `uk-form-help-inline`, `uk-form-help-block`
+ ========================================================================== */
+.uk-form-help-inline {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+.uk-form-help-block {
+  margin: 5px 0 0 0;
+}
+/* Controls content
+ * Sub-object: `uk-form-controls`, `uk-form-controls-condensed`
+ ========================================================================== */
+/*
+ * Remove margins
+ */
+.uk-form-controls > :first-child {
+  margin-top: 0;
+}
+.uk-form-controls > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Group controls and text into blocks with a small spacing between blocks
+ */
+.uk-form-controls-condensed {
+  margin: 5px 0;
+}
+/* Modifier: `uk-form-stacked`
+ * Requires sub-object: `uk-form-label`
+ ========================================================================== */
+.uk-form-stacked .uk-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* Modifier: `uk-form-horizontal`
+ * Requires sub-objects: `uk-form-label`, `uk-form-controls`
+ ========================================================================== */
+/* Tablet portrait and smaller */
+@media (max-width: 959px) {
+  /* Behave like `uk-form-stacked` */
+  .uk-form-horizontal .uk-form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+}
+/* Desktop and bigger */
+@media (min-width: 960px) {
+  .uk-form-horizontal .uk-form-label {
+    width: 200px;
+    margin-top: 5px;
+    float: left;
+  }
+  .uk-form-horizontal .uk-form-controls {
+    margin-left: 215px;
+  }
+  /* Better vertical alignment if controls are checkboxes and radio buttons with text */
+  .uk-form-horizontal .uk-form-controls-text {
+    padding-top: 5px;
+  }
+}
+/* Sub-object: `uk-form-icon`
+ ========================================================================== */
+/*
+ * 1. Container width fits its content
+ * 2. Create position context
+ * 3. Prevent `inline-block` consequences
+ */
+.uk-form-icon {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+}
+/*
+ * 1. Make form element clickable through icon
+ */
+.uk-form-icon > [class*='uk-icon-'] {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  margin-top: -7px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  /* 1 */
+  pointer-events: none;
+}
+.uk-form-icon:not(.uk-form-icon-flip) > input {
+  padding-left: 30px !important;
+}
+/*
+ * Sub-modifier: `uk-form-icon-flip`
+ */
+.uk-form-icon-flip > [class*='uk-icon-'] {
+  right: 0;
+}
+.uk-form-icon-flip > input {
+  padding-right: 30px !important;
+}
+input {
+  height: 40px;
+}
+/* ========================================================================
+   Component: Article
+ ========================================================================== */
+/*
+ * Micro clearfix to make articles more robust
+ */
+.uk-article:before,
+.uk-article:after {
+  content: "";
+  display: table;
+}
+.uk-article:after {
+  clear: both;
+}
+/*
+ * Remove margin from the last-child
+ */
+.uk-article > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Vertical gutter for articles
+ */
+.uk-article + .uk-article {
+  margin-top: 40px;
+}
+/* Sub-object `uk-article-title`
+ ========================================================================== */
+.uk-article-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: normal;
+  text-transform: none;
+}
+.uk-article-title a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Sub-object `uk-article-meta`
+ ========================================================================== */
+.uk-article-meta {
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+}
+/* Sub-object `uk-article-lead`
+ ========================================================================== */
+.uk-article-lead {
+  color: #444;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+/* Sub-object `uk-article-divider`
+ ========================================================================== */
+.uk-article-divider {
+  margin-bottom: 25px;
+  border-color: #ddd;
+}
+* + .uk-article-divider {
+  margin-top: 25px;
+}
 /*--------------------------------------------------------------
 Site
 --------------------------------------------------------------*/
@@ -9267,7 +9863,7 @@ TYPOGRAPHY
 footer
 --------------------------------------------------------------*/
 .tm-footer {
-  background: #1B3672;
+  background: #2D3047;
   color: #fff;
 }
 .tm-fat-footer {
@@ -9296,7 +9892,7 @@ Header
   font-weight: 400;
   color: #444;
   text-transform: uppercase;
-  border-bottom: 3px solid #ED7365;
+  border-bottom: 3px solid #E91E63;
 }
 .tm-hero-area {
   height: 400px;
@@ -9315,14 +9911,14 @@ Header nav
   letter-spacing: 1px;
 }
 .tm-header .uk-navbar-nav > li > a:hover {
-  color: #ED7365;
+  color: #E91E63;
 }
 .tm-header.uk-active .uk-navbar-nav > li > a {
   color: #444;
   font-weight: 600;
 }
 .tm-header.uk-active .uk-navbar-nav > li > a:hover {
-  color: #ED7365;
+  color: #E91E63;
 }
 /*--------------------------------------------------------------
 sidebar
@@ -9336,4 +9932,16 @@ sidebar
 /*--------------------------------------------------------------
 content
 --------------------------------------------------------------*/
+.tm-primary .uk-article,
+.tm-secondary .tm-widget {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.tm-primary .uk-article {
+  padding: 40px;
+}
+.tm-secondary .tm-widget {
+  padding: 30px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -86,6 +86,6 @@ function wst_enqueue_uikit_assets() {
 add_action( 'wp_enqueue_scripts', 'wst_add_google_fonts' );
 function wst_add_google_fonts() {
 
-	wp_enqueue_style( 'wst-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700|Playfair+Display', false );
+	wp_enqueue_style( 'wst-google-fonts', 'https://fonts.googleapis.com/css?family=Oswald:300,400,500|Raleway:300,300i,400,400i,600', false );
 }
 
