@@ -42,6 +42,5 @@ add_filter( 'timber_context', 'wst_add_to_context'  );
 function wst_add_to_context( $context ) {
 	$post               = new TimberPost();
 	$context['post']    = $post;
-	$context['options'] = get_fields('option');
 	return $context;
 }

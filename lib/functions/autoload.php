@@ -11,6 +11,7 @@ function wst_load_nonadmin_files() {
 	$filenames = array(
 		'setup.php',
 		'functions/enqueue-assets.php',
+		'functions/helper-functions.php',
 		'components/customizer-css.php',
 		'functions/register-widgets.php',
 		'structure/header.php',
