@@ -2453,7 +2453,6 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  width: 130px;
 }
 /*
  * Hover
@@ -10045,6 +10044,10 @@ footer
   -moz-transform: rotateZ(360deg);
   -ms-transform: rotateZ(360deg);
   -o-transform: rotateZ(360deg);
+}
+.tm-footer .uk-icon-heart {
+  color: #E91E63;
+  margin-left: 3px;
 }
 .tm-fat-footer {
   background: #2D3047;

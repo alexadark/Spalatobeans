@@ -1,5 +1,12 @@
 <?php
 add_action( 'after_setup_theme', 'wst_set_up_child_theme' );
+/**
+ * Set up child theme
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
 function wst_set_up_child_theme(){
 	wst_add_new_image_sizes();
 }
@@ -38,7 +45,15 @@ if ( ! class_exists( 'Timber' ) ) {
 }
 
 add_filter( 'timber_context', 'wst_add_to_context'  );
-
+/**
+ * add post as timberPost
+ *
+ * @since 1.0.0
+ *
+ * @param $context
+ *
+ * @return mixed
+ */
 function wst_add_to_context( $context ) {
 	$post               = new TimberPost();
 	$context['post']    = $post;

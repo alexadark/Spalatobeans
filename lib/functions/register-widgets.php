@@ -1,6 +1,12 @@
 <?php
-add_action( 'widgets_init', 'beans_child_widgets_init' );
-
+add_action( 'widgets_init', 'wst_register_widget_areas' );
+/**
+ * Register your widget areas here
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
 function wst_register_widget_areas() {
 	$widgets_areas = array(
 		array(
@@ -21,6 +27,3 @@ function wst_register_widget_areas() {
 	}
 }
 
-function beans_child_widgets_init() {
-	wst_register_widget_areas();
-}

@@ -12,6 +12,13 @@ add_action( 'wp_enqueue_scripts', 'wst_enqueue_dev_styles' );
 //Prod css, autocompile
 	add_action( 'beans_uikit_enqueue_scripts', 'wst_enqueue_styles', 5 );
 }
+/**
+ * enqueue styles when we are in css dev mode
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
 
 function wst_enqueue_dev_styles() {
 	//dev css mode: available to css injection and source maps trough codekit, gulp or grunt
@@ -20,10 +27,16 @@ function wst_enqueue_dev_styles() {
 
 }
 
+/**
+ * Enqueue styles in prod
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+
 function wst_enqueue_styles(){
 //	Prod css mode: autocompile
-
-
 
 //	 Enqueue uikit overwrite theme folder
 		beans_uikit_enqueue_theme( 'beans_child', CHILD_URL . '/assets/less/initial-theme' );
@@ -31,10 +44,8 @@ function wst_enqueue_styles(){
 		beans_compiler_add_fragment( 'uikit', array(
 			CHILD_URL . '/assets/less/partials/fonts.less',
 			CHILD_URL . '/assets/less/mymixins.less',
-
 			CHILD_URL . '/assets/less/partials/default.less',
 			CHILD_URL . '/assets/less/partials/typo.less',
-			CHILD_URL . '/assets/less/layouts/text-area.less',
 			CHILD_URL . '/assets/less/partials/header.less',
 			CHILD_URL . '/assets/less/partials/footer.less',
 			CHILD_URL . '/assets/less/partials/nav.less',
@@ -42,7 +53,6 @@ function wst_enqueue_styles(){
 			CHILD_URL . '/assets/less/partials/widgets.less',
 			CHILD_URL . '/assets/less/partials/content.less',
 			CHILD_URL . '/assets/less/partials/pages.less',
-
 
 		), 'less' );
 
@@ -84,6 +94,13 @@ function wst_enqueue_uikit_assets() {
 
 //google fonts
 add_action( 'wp_enqueue_scripts', 'wst_add_google_fonts' );
+/**
+ * Enqueue google fonts
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
 function wst_add_google_fonts() {
 
 	wp_enqueue_style( 'wst-google-fonts', 'https://fonts.googleapis.com/css?family=Oswald:300,400,500|Raleway:300,300i,400,400i,600', false );
