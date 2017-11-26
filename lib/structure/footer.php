@@ -13,7 +13,9 @@ function wst_set_up_footer_structure() {
 	//FAT FOOTER
 	beans_add_smart_action( 'beans_footer_wrapper_prepend_markup', 'wst_display_fat_footer' );
 	function wst_display_fat_footer() {
-		?>
+		if(!is_active_sidebar('fat-footer')){
+		    return;
+		}?>
 		<div class="tm-fat-footer uk-block">
 			<div class="uk-container uk-container-center">
 				<?php echo beans_widget_area( 'fat-footer' ); ?>
