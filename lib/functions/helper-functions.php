@@ -11,7 +11,7 @@
 function wst_add_featured_image_body_class( $classes ) {
 
 	global $post;
-	if ( isset ( $post->ID ) && get_the_post_thumbnail($post->ID) && !is_home()) {
+	if ( isset ( $post->ID ) && get_the_post_thumbnail($post->ID) && !is_home() && !is_archive()) {
 		$classes[] = 'has-featured-image';
 	}
 	return $classes;
