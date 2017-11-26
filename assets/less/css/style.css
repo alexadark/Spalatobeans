@@ -1640,6 +1640,19 @@ iframe {
 /* ========================================================================
    Component: Comment
  ========================================================================== */
+.uk-comment {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .uk-comment {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+  }
+}
 /* Sub-object `uk-comment-header`
  ========================================================================== */
 .uk-comment-header {
@@ -2402,7 +2415,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-pagination > li {
   display: inline-block;
   /* 1 */
-  font-size: 1rem;
+  font-size: 14px;
   /* 2 */
   vertical-align: top;
 }
@@ -2428,14 +2441,19 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   padding: 10px;
   font-weight: 400;
   color: #E91E63;
-  font-size: 14px;
 }
 /*
  * Links
  */
 .uk-pagination > li > a {
-  background: #eee;
-  color: #444;
+  background: #2D3047;
+  color: #fff;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 130px;
 }
 /*
  * Hover
@@ -2444,12 +2462,10 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  */
 .uk-pagination > li > a:hover,
 .uk-pagination > li > a:focus {
-  background-color: #f5f5f5;
-  color: #444;
+  background-color: #E91E63;
+  color: #fff;
   /* 2 */
   outline: none;
-  background: #E91E63;
-  color: #fff;
 }
 /* OnClick */
 .uk-pagination > li > a:active {
@@ -3264,6 +3280,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 5 */
   font-size: 18px;
   line-height: 30px;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
 }
 /*
  * 1. Fixes IE9
@@ -5953,7 +5971,7 @@ select.uk-form-width-mini {
 .uk-badge {
   display: inline-block;
   padding: 0 5px;
-  background: #00a8e6;
+  background: #E91E63;
   font-size: 10px;
   font-weight: bold;
   line-height: 14px;
@@ -9559,6 +9577,8 @@ input {
   /* 5 */
   font-size: 18px;
   line-height: 30px;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
 }
 /*
  * 1. Fixes IE9
@@ -9840,6 +9860,147 @@ input {
 }
 * + .uk-article-divider {
   margin-top: 25px;
+}
+/* ========================================================================
+   Component: Comment
+ ========================================================================== */
+.uk-comment {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .uk-comment {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+  }
+}
+/* Sub-object `uk-comment-header`
+ ========================================================================== */
+.uk-comment-header {
+  margin-bottom: 15px;
+}
+/*
+ * Micro clearfix
+ */
+.uk-comment-header:before,
+.uk-comment-header:after {
+  content: "";
+  display: table;
+}
+.uk-comment-header:after {
+  clear: both;
+}
+/* Sub-object `uk-comment-avatar`
+ ========================================================================== */
+.uk-comment-avatar {
+  margin-right: 15px;
+  float: left;
+}
+/* Sub-object `uk-comment-title`
+ ========================================================================== */
+.uk-comment-title {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+/* Sub-object `uk-comment-meta`
+ ========================================================================== */
+.uk-comment-meta {
+  margin: 2px 0 0 0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #999;
+}
+/* Sub-object `uk-comment-body`
+ ========================================================================== */
+/*
+ * Remove margin from the last-child
+ */
+.uk-comment-body > :last-child {
+  margin-bottom: 0;
+}
+/* Sub-object `uk-comment-list`
+ ========================================================================== */
+.uk-comment-list {
+  padding: 0;
+  list-style: none;
+}
+.uk-comment-list .uk-comment + ul {
+  margin: 15px 0 0 0;
+  list-style: none;
+}
+.uk-comment-list > li:nth-child(n+2),
+.uk-comment-list .uk-comment + ul > li:nth-child(n+2) {
+  margin-top: 15px;
+}
+/* Tablet and bigger */
+@media (min-width: 768px) {
+  .uk-comment-list .uk-comment + ul {
+    padding-left: 100px;
+  }
+}
+/* Modifier `uk-comment-primary`
+ ========================================================================== */
+.tm-comments {
+  background: transparent;
+}
+@media (min-width: 768px) {
+  .tm-comments {
+    padding: 40px;
+  }
+}
+/* ========================================================================
+   Component: Badge
+ ========================================================================== */
+.uk-badge {
+  display: inline-block;
+  padding: 0 5px;
+  background: #E91E63;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: none;
+}
+/*
+ * Keep color when badge is a link
+ */
+a.uk-badge:hover {
+  color: #fff;
+}
+/* Modifier: `uk-badge-notification`;
+ ========================================================================== */
+.uk-badge-notification {
+  box-sizing: border-box;
+  min-width: 18px;
+  border-radius: 500px;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Color modifier
+ ========================================================================== */
+/*
+ * Modifier: `uk-badge-success`
+ */
+.uk-badge-success {
+  background-color: #8cc14c;
+}
+/*
+ * Modifier: `uk-badge-warning`
+ */
+.uk-badge-warning {
+  background-color: #faa732;
+}
+/*
+ * Modifier: `uk-badge-danger`
+ */
+.uk-badge-danger {
+  background-color: #da314b;
 }
 /*--------------------------------------------------------------
 Site
