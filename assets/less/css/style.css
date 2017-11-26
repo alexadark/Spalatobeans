@@ -8998,6 +8998,11 @@ a.uk-thumbnail:focus {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
+  white-space: normal;
+}
 input[type="button"] {
   /* 1 */
   -webkit-appearance: none;
