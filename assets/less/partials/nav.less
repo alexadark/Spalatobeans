@@ -4,10 +4,9 @@ Header nav
 .tm-header{
   .uk-navbar-nav > li > a{
     color: @global-color;
-    font-weight: 600;
     font-size:12px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    font-family: @base-heading-font-family;
     &:hover{
       color:@primary-color;
     }
@@ -16,11 +15,14 @@ Header nav
   &.uk-active {
     .uk-navbar-nav > li > a {
       color: @global-color;
-      font-weight: 600;
       &:hover{
         color: @primary-color;
       }
     }
+  }
+  .sub-menu > li > a{
+    font-family: @base-heading-font-family;
+    letter-spacing: 1px;
   }
 }
 

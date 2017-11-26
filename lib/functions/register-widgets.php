@@ -15,6 +15,12 @@ function wst_register_widget_areas() {
 			'beans_type'  => 'grid',
 			'description' => ''
 		),
+		array(
+			'name'        => 'Top Bar',
+			'id'          => 'top-bar',
+			'beans_type'  => 'grid',
+			'description' => ''
+		),
 	);
 	foreach ( $widgets_areas as $widget_area ) {
 		beans_register_widget_area( array(
