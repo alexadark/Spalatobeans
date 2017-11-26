@@ -9890,9 +9890,6 @@ Header
 .tm-header {
   background: #fff;
   padding: 15px;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
 }
 .tm-header.uk-active {
   background: #fff;
@@ -9922,7 +9919,8 @@ Header
 .tm-hero-area .uk-article-title {
   color: #fff;
 }
-.has-featured-image .tm-header:not(.uk-active) {
+.has-featured-image .tm-header:not(.uk-active),
+.page-template-builder-page .tm-header:not(.uk-active) {
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -9930,10 +9928,13 @@ Header
   border-bottom: 0;
 }
 .has-featured-image .tm-header:not(.uk-active) a,
-.has-featured-image .tm-header:not(.uk-active) .tm-primary-menu li a {
+.page-template-builder-page .tm-header:not(.uk-active) a,
+.has-featured-image .tm-header:not(.uk-active) .tm-primary-menu li a,
+.page-template-builder-page .tm-header:not(.uk-active) .tm-primary-menu li a {
   color: #fff;
 }
-.has-featured-image .tm-header:not(.uk-active) .tm-primary-menu .uk-dropdown {
+.has-featured-image .tm-header:not(.uk-active) .tm-primary-menu .uk-dropdown,
+.page-template-builder-page .tm-header:not(.uk-active) .tm-primary-menu .uk-dropdown {
   background-color: rgba(0, 0, 0, 0.3);
 }
 /*--------------------------------------------------------------

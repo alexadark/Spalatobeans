@@ -12,10 +12,6 @@ Header
     }
 
   }
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-
 
 }
 .tm-header-wrapper {
@@ -44,7 +40,10 @@ Header
     color:@white;
   }
 }
-.has-featured-image {
+
+//Uncomment this to have a transparent header with featured image above
+
+.has-featured-image, .page-template-builder-page {
   .tm-header:not(.uk-active) {
     position: absolute;
     width: 100%;
