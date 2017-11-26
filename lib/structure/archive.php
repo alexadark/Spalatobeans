@@ -9,7 +9,7 @@ add_action( 'wp', 'wst_set_up_archive_structure' );
  */
 function wst_set_up_archive_structure() {
 
-	if(is_home()){
+	if(is_home() || is_archive()){
 		//featured image on top of posts on blog page
 
 		add_action( 'beans_post_prepend_markup', 'beans_post_image' );
@@ -51,6 +51,13 @@ function wst_set_up_archive_structure() {
 
 
 add_filter( 'beans_post_more_link_text_output', 'wst_modify_more_link_text' );
+/**
+ * Modify more link text
+ *
+ * @since 1.0.0
+ *
+ * @return string
+ */
 function wst_modify_more_link_text(){
 	return 'Read More';
 }
