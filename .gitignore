@@ -11,9 +11,6 @@ config.codekit3
 */codekit-config.json
 .codekit-cache
 
-### Less ###
-*.less
-
 ### macOS ###
 *.DS_Store
 .AppleDouble

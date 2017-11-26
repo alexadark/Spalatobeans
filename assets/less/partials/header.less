@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+.tm-header{
+  background: @white;
+  padding: @global-margin;
+  &.uk-active{
+    background: @white;
+    border-bottom: 1px solid @global-border;
+    .tm-site-branding a{
+      color:@global-color;
+    }
+
+  }
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+
+}
+.tm-header-wrapper {
+  @media (min-width: @breakpoint-medium) {
+    border-bottom: @site-frame*2 solid @white;
+    margin-bottom: -@site-frame*2;
+  }
+
+}
+.tm-site-branding{
+  a{
+    font-weight: 400;
+    color: @global-color;
+    text-transform: uppercase;
+    font-family: @base-heading-font-family;
+    border-bottom:1px solid @primary-color;
+    font-size:20px;
+    letter-spacing: 2px;
+
+  }
+}
+
+.tm-hero-area{
+  height: 400px;
+  .uk-article-title{
+    color:@white;
+  }
+}
+.has-featured-image {
+  .tm-header:not(.uk-active) {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .1);
+    border-bottom: 0;
+    a, .tm-primary-menu li a {
+      color: @white;
+    }
+    .tm-primary-menu .uk-dropdown {
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+  }
+}

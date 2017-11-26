@@ -1,0 +1,95 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Close
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@close-size:                                    20px;
+@close-alt-padding:                             0;
+
+
+//
+// New
+//
+
+@close-icon:                                    '\e117';
+@close-icon-size:                               10px;
+@close-opacity:                                 1;
+@close-hover-opacity:                           0.7;
+
+@close-alt-size:                                26px;
+@close-alt-color:                               @global-contrast-color;
+@close-alt-hover-background:                    @global-primary-background;
+@close-alt-hover-color:                         @close-alt-color;
+@close-alt-opacity:                             1;
+@close-alt-hover-opacity:                       1;
+
+
+// Component
+// ========================================================================
+
+.hook-close() {
+  background: @black;
+  opacity: @close-opacity;
+  .transition;
+}
+
+
+// Modifier: `uk-close-alt`
+// ========================================================================
+
+.hook-close-alt() {
+  width: @close-alt-size;
+  line-height: @close-alt-size !important;
+  border-radius: round((@close-alt-size / 2));
+  opacity: @close-alt-opacity;
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-close-misc() {
+
+  // Close modifications
+  .uk-close::after {
+    content: @close-icon;
+    font-size: @close-icon-size;
+
+  }
+
+  // Hover
+  .uk-close:hover,
+  .uk-close:focus { opacity: @close-hover-opacity; }
+
+  // Close Alt modifications
+  .uk-close-alt:hover { background: @close-alt-hover-background; }
+
+  .uk-close-alt:hover,
+  .uk-close-alt:focus { opacity: @close-alt-opacity; }
+
+  .uk-close-alt::after {
+    color: @close-alt-color;
+    opacity: @close-alt-opacity;
+  }
+
+  .uk-close-alt:hover::after {
+    color: @close-alt-hover-color;
+    opacity: @close-alt-hover-opacity;
+  }
+
+}
+
+/* Icon */
+.uk-close:after {
+  display: block;
+  content: "\e306";
+  font-family: 'icomoon' !important;
+}
+

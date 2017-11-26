@@ -1,0 +1,99 @@
+// Name:            Navbar
+// Description:     Defines styles for the navigation bar
+//
+// Component:       `uk-navbar`
+//
+// Sub-objects:     `uk-navbar-nav`
+//                  `uk-navbar-nav-subtitle`
+//                  `uk-navbar-content`
+//                  `uk-navbar-brand`
+//                  `uk-navbar-toggle`
+//                  `uk-navbar-toggle-alt`
+//                  `uk-navbar-center`
+//                  `uk-navbar-flip`
+//
+// Modifiers:       `uk-navbar-attached`
+//
+// States:          `uk-active`
+//                  `uk-parent`
+//                  `uk-open`
+//
+// Used by:         Dropdown
+//
+// Markup:
+//
+// <!-- uk-navbar -->
+// <nav class="uk-navbar">
+//     <ul class="uk-navbar-nav">
+//         <li class="uk-active"><a href=""></a></li>
+//         <li><a href=""></a></li>
+//     </ul>
+// </nav>
+//
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             transparent;
+@navbar-color:                                  lighten(@dark-grey, 15%);;
+@navbar-link-color:                             #07D;
+@navbar-link-hover-color:                       @primary-color;
+
+@navbar-nav-height:                             40px;
+@navbar-nav-line-height:                        @navbar-nav-height;
+@navbar-nav-padding-horizontal:                 15px;
+@navbar-nav-color:                              #444;
+@navbar-nav-font-size:                          16px;
+@navbar-nav-font-weight:                        normal;
+@navbar-nav-font-family:                        @base-body-font-family;
+@navbar-nav-hover-background:                   transparent;
+@navbar-nav-hover-color:                        @primary-color;
+@navbar-nav-onclick-background:                 transparent;
+@navbar-nav-onclick-color:                      #444;
+@navbar-nav-active-background:                  transparent;
+@navbar-nav-active-color:                       @primary-color;
+@navbar-nav-subtitle-font-size:                 10px;
+@navbar-nav-subtitle-offset:                    2px;
+
+@navbar-brand-font-size:                        18px;
+@navbar-brand-color:                            #444;
+@navbar-brand-hover-color:                      #444;
+
+@navbar-toggle-font-size:                       18px;
+@navbar-toggle-color:                           #444;
+@navbar-toggle-hover-color:                     #444;
+@navbar-toggle-icon:                            "\f0c9";
+@navbar-toggle-icon-alt:                        "\f002";
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Sub-object: `uk-navbar-nav`
+// ========================================================================
+
+.hook-navbar-nav() {}
+
+// Hover
+.hook-navbar-nav-hover() {}
+
+// OnClick
+.hook-navbar-nav-onclick() {}
+
+// Active
+.hook-navbar-nav-active() {}
+
+
+// Sub-object: `uk-navbar-content`
+// ========================================================================
+
+.hook-navbar-content() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {}

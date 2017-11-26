@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+content
+--------------------------------------------------------------*/
+.tm-main {
+  //background: @white;
+}
+
+.tm-primary .uk-article, .tm-secondary .tm-widget {
+  @media (min-width: @breakpoint-medium) {
+    .box-shadow(@global-medium-box-shadow);
+  }
+
+}
+
+.tm-primary {
+  .uk-article {
+    @media (min-width: @breakpoint-medium){
+      padding: 40px;
+    }
+
+  }
+}
+
+.tm-secondary {
+  .tm-widget {
+    @media (min-width: @breakpoint-medium){
+      padding: 30px;
+    }
+
+  }
+}
+
+article > .tm-article-image:first-child {
+  margin-top: -40px;
+  margin-left: -40px;
+  margin-right: -40px;
+}

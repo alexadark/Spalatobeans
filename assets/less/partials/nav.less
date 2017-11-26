@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+Header nav
+--------------------------------------------------------------*/
+.tm-header{
+  .uk-navbar-nav > li > a{
+    color: @global-color;
+    font-weight: 600;
+    font-size:12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover{
+      color:@primary-color;
+    }
+
+  }
+  &.uk-active {
+    .uk-navbar-nav > li > a {
+      color: @global-color;
+      font-weight: 600;
+      &:hover{
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.tm-primary-menu{
+  .uk-dropdown{
+    top:32px !important;
+  }
+}

@@ -1,0 +1,59 @@
+// Name:            Off-canvas
+// Description:     Defines styles for an off-canvas sidebar that slides in and out of the page
+//
+// Component:       `uk-offcanvas`
+//
+// Sub-objects:     `uk-offcanvas-page`
+//                  `uk-offcanvas-bar`
+//                  `uk-offcanvas-close`
+//
+// Modifiers:       `uk-offcanvas-bar-flip`
+//
+// States:          `uk-active`
+//
+// Uses:            Panel: `uk-panel`
+//
+// Markup:
+//
+// <!-- uk-offcanvas -->
+// <a href="#offcanvas" data-uk-offcanvas>Open</a>
+// <div id="offcanvas" class="uk-offcanvas">
+//     <div class="uk-offcanvas-bar"></div>
+// </div>
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@offcanvas-z-index:                             1000;
+@offcanvas-background:                          rgba(0,0,0,0.1);
+
+@offcanvas-bar-width:                           270px;
+@offcanvas-bar-background:                      @primary-color;
+
+@offcanvas-panel-margin:                        20px 15px;
+@offcanvas-panel-color:                         #777;
+@offcanvas-panel-link-color:                    #ccc;
+@offcanvas-panel-link-hover-color:              #fff;
+@offcanvas-panel-title-color:                   @offcanvas-panel-link-color;
+
+
+
+
+// Hooks
+// ========================================================================
+
+.hook-offcanvas-misc;
+
+.hook-offcanvas() {
+  font-weight:400;
+}
+.hook-offcanvas-bar() {}
+.hook-offcanvas-panel() {}
+.hook-offcanvas-misc() {}
+
+.uk-nav-offcanvas > li > a, .uk-nav-offcanvas ul a{
+  font-size:14px;
+}

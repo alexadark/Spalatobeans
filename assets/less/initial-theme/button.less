@@ -1,0 +1,138 @@
+// Name:            Button
+// Description:     Defines styles for buttons
+//
+// Component:       `uk-button`
+//
+// Sub-objects:     `uk-button-group`
+//                  `uk-button-dropdown`
+//
+// Modifiers:       `uk-button-primary`
+//                  `uk-button-success`
+//                  `uk-button-danger`
+//                  `uk-button-link`
+//                  `uk-button-mini`
+//                  `uk-button-small`
+//                  `uk-button-large`
+//
+// States:          `uk-active`
+//
+// Markup:
+//
+// <!-- uk-button-group -->
+// <div class="uk-button-group">
+//     <button class="uk-button"></button>
+//     <button class="uk-button"></button>
+// </div>
+//
+// <!-- uk-button-dropdown -->
+// <div class="uk-button-dropdown" data-uk-dropdown>
+//     <button class="uk-button"></button>
+//     <div class="uk-dropdown uk-dropdown-small">
+//         <ul class="uk-nav uk-nav-dropdown">
+//             <li><a href=""></a></li>
+//         </ul>
+//     </div>
+// </div>
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-height:                                 40px;
+@button-mini-height:                            20px;
+@button-small-height:                           25px;
+@button-large-height:                           40px;
+
+@button-line-height:                            @button-height;
+@button-mini-line-height:                       20px;
+@button-small-line-height:                      25px;
+@button-large-line-height:                      40px;
+
+@button-mini-font-size:                         11px;
+@button-small-font-size:                        12px;
+@button-large-font-size:                        16px;
+
+@button-padding-horizontal:                     20px;
+@button-mini-padding-horizontal:                6px;
+@button-small-padding-horizontal:               10px;
+@button-large-padding-horizontal:               15px;
+
+@button-font-size:                              12px;
+@button-background:                             @primary-color;
+@button-color:                                  @white;
+@button-hover-background:                       darken(@primary-color, 10%);
+@button-hover-color:                            @white;
+@button-active-background:                      @primary-color;
+@button-active-color:                           @white;
+
+@button-primary-background:                     @primary-color;
+@button-primary-color:                          #fff;
+@button-primary-hover-background:               darken(@primary-color, 10%);
+@button-primary-hover-color:                    #fff;
+@button-primary-active-background:              @primary-color;
+@button-primary-active-color:                   #fff;
+
+@button-success-background:                     #8cc14c;
+@button-success-color:                          #fff;
+@button-success-hover-background:               #8ec73b;
+@button-success-hover-color:                    #fff;
+@button-success-active-background:              #72ae41;
+@button-success-active-color:                   #fff;
+
+@button-danger-background:                      #da314b;
+@button-danger-color:                           #fff;
+@button-danger-hover-background:                #e4354f;
+@button-danger-hover-color:                     #fff;
+@button-danger-active-background:               #c91032;
+@button-danger-active-color:                    #fff;
+
+@button-disabled-background:                    #f5f5f5;
+@button-disabled-color:                         #999;
+
+@button-link-color:                             @primary-color;;
+@button-link-hover-color:                       darken(@primary-color, 10%);;
+@button-link-hover-text-decoration:             underline;
+@button-link-disabled-color:                    #999;
+
+.hook-button() {
+  border:2px solid @primary-color;
+ border-radius:2px;
+  background-color: transparent;
+  color: @primary-color;
+  .transition();
+  text-transform: uppercase;
+  font-weight:bold;
+  letter-spacing: 1px;
+
+}
+.hook-button-hover() {
+}
+.hook-button-active() {}
+.hook-button-primary() {
+  border:none;
+}
+.hook-button-primary-hover() {}
+.hook-button-primary-active() {}
+.hook-button-success() {}
+.hook-button-success-hover() {}
+.hook-button-success-active() {}
+.hook-button-danger() {}
+.hook-button-danger-hover() {}
+.hook-button-danger-active() {}
+.hook-button-disable() {}
+.hook-button-link() {}
+.hook-button-large() {
+  border-radius:0;
+}
+.hook-button-misc() {}
+
+ input[type="button"]{
+   .uk-button;
+   .uk-button-primary;
+   color: @white !important;
+   &:hover{
+     background: @button-primary-hover-background;
+   }
+ }

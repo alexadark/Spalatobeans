@@ -1,0 +1,42 @@
+// Variables
+// ========================================================================
+
+@pagination-font-size:                          1rem;
+@pagination-margin-left:                        5px;
+@pagination-padding-vertical:                   3px;
+@pagination-padding-horizontal:                 5px;
+@pagination-line-height:                        20px;
+@pagination-background:                         #eee;
+@pagination-color:                              #444;
+@pagination-hover-background:                   #f5f5f5;
+@pagination-hover-color:                        #444;
+@pagination-onclick-background:                 #ddd;
+@pagination-onclick-color:                      #444;
+
+@pagination-active-background:                  @primary-color;
+@pagination-active-color:                       #fff;
+
+@pagination-disabled-background:                #f5f5f5;
+@pagination-disabled-color:                     #999;
+
+
+
+.hook-pagination-item() {
+  border-radius:0;
+  padding: 10px;
+  font-weight: 400;
+  color:@primary-color;
+  font-size:14px;
+
+}
+.hook-pagination-link() {
+
+}
+.hook-pagination-link-hover() {
+  background: @primary-color;
+  color:@white;
+}
+.hook-pagination-link-active() {}
+.hook-pagination-active() {}
+.hook-pagination-disabled() {}
+.hook-pagination-misc() {}
