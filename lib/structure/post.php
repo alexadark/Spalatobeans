@@ -18,5 +18,7 @@ function wst_set_up_post_structure() {
 		//remove comments from pages
 		remove_post_type_support( 'page', 'comments' );
 	}
+	beans_remove_attribute('beans_comments','class','uk-panel-box');
+	beans_add_attribute('beans_comment_form_wrap','class','uk-panel-box');
 
 }

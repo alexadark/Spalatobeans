@@ -1642,16 +1642,11 @@ iframe {
  ========================================================================== */
 .uk-comment {
   background: #fff;
-  padding: 10px;
   margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .uk-comment {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    padding: 30px;
-  }
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
 }
 /* Sub-object `uk-comment-header`
  ========================================================================== */
@@ -9870,16 +9865,11 @@ input {
  ========================================================================== */
 .uk-comment {
   background: #fff;
-  padding: 10px;
   margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .uk-comment {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    padding: 30px;
-  }
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
 }
 /* Sub-object `uk-comment-header`
  ========================================================================== */
@@ -9948,14 +9938,6 @@ input {
 }
 /* Modifier `uk-comment-primary`
  ========================================================================== */
-.tm-comments {
-  background: transparent;
-}
-@media (min-width: 768px) {
-  .tm-comments {
-    padding: 40px;
-  }
-}
 /* ========================================================================
    Component: Badge
  ========================================================================== */
@@ -10094,12 +10076,18 @@ Header
   font-size: 20px;
   letter-spacing: 2px;
 }
+/*-----------------------------------------------------------
+	hero area
+/*------------------------------------------------------------*/
 .tm-hero-area {
   height: 400px;
 }
 .tm-hero-area .uk-article-title {
   color: #fff;
 }
+/*-----------------------------------------------------------
+	Transparent header
+/*------------------------------------------------------------*/
 .has-featured-image .tm-header:not(.uk-active),
 .page-template-builder-page .tm-header:not(.uk-active) {
   position: absolute;
@@ -10118,6 +10106,9 @@ Header
 .page-template-builder-page .tm-header:not(.uk-active) .tm-primary-menu .uk-dropdown {
   background-color: rgba(0, 0, 0, 0.3);
 }
+/*-----------------------------------------------------------
+	top bar
+/*------------------------------------------------------------*/
 .top-bar {
   display: none;
   background: #2D3047;
@@ -10208,18 +10199,22 @@ sidebar
 /*--------------------------------------------------------------
 content
 --------------------------------------------------------------*/
-@media (min-width: 768px) {
-  .tm-primary .uk-article,
-  .tm-secondary .tm-widget {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  }
+.tm-primary .uk-article,
+.tm-secondary .tm-widget {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.tm-primary .uk-article {
+  padding: 30px;
 }
 @media (min-width: 768px) {
   .tm-primary .uk-article {
     padding: 40px;
   }
+}
+.tm-secondary .tm-widget {
+  padding: 20px;
 }
 @media (min-width: 768px) {
   .tm-secondary .tm-widget {
@@ -10230,5 +10225,19 @@ article > .tm-article-image:first-child {
   margin-top: -40px;
   margin-left: -40px;
   margin-right: -40px;
+}
+/*-----------------------------------------------------------
+	Comments
+/*------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .tm-comments {
+    padding: 40px;
+  }
+}
+.tm-comment-form-wrap {
+  padding: 30px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 /*# sourceMappingURL=style.css.map */

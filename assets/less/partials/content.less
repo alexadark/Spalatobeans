@@ -6,14 +6,15 @@ content
 }
 
 .tm-primary .uk-article, .tm-secondary .tm-widget {
-  @media (min-width: @breakpoint-medium) {
+
     .box-shadow(@global-medium-box-shadow);
-  }
+
 
 }
 
 .tm-primary {
   .uk-article {
+    padding: 30px;
     @media (min-width: @breakpoint-medium){
       padding: 40px;
     }
@@ -23,6 +24,7 @@ content
 
 .tm-secondary {
   .tm-widget {
+    padding: 20px;
     @media (min-width: @breakpoint-medium){
       padding: 30px;
     }
@@ -35,3 +37,20 @@ article > .tm-article-image:first-child {
   margin-left: -40px;
   margin-right: -40px;
 }
+
+/*-----------------------------------------------------------
+	Comments
+/*------------------------------------------------------------*/
+.tm-comments{
+  @media (min-width: @breakpoint-medium){
+    padding: 40px;
+  }
+}
+.tm-comment-form-wrap{
+
+    padding: 30px;
+    .box-shadow(@global-medium-box-shadow);
+
+}
+
+
