@@ -10347,6 +10347,11 @@ Header
 .tm-hero-area .uk-article-title {
   color: #fff;
 }
+.tm-hero-area .uk-article-title {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+}
 /*-----------------------------------------------------------
 	Transparent header
 /*------------------------------------------------------------*/
