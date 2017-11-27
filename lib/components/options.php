@@ -1,5 +1,5 @@
 <?php
-//add_action( 'admin_init', 'wst_spalatobeans_options' );
+add_action( 'admin_init', 'wst_spalatobeans_options' );
 function wst_spalatobeans_options() {
 	$fields = array(
 		array(
@@ -11,9 +11,10 @@ function wst_spalatobeans_options() {
 
 	);
 
-	beans_register_options( $fields, 'theme_options', 'settings', array( 'title' => 'Css dev mode' ) );
+	beans_register_options( $fields, 'beans_settings', 'options', array( 'title' => 'Css dev mode' ) );
 
 }
+$css_dev_mode = beans_get_term_meta('css_dev_mode',0);
 
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;

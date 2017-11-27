@@ -31,12 +31,12 @@
 @offcanvas-background:                          rgba(0,0,0,0.1);
 
 @offcanvas-bar-width:                           270px;
-@offcanvas-bar-background:                      @primary-color;
+@offcanvas-bar-background:                      @secondary-color;
 
 @offcanvas-panel-margin:                        20px 15px;
 @offcanvas-panel-color:                         #777;
-@offcanvas-panel-link-color:                    #ccc;
-@offcanvas-panel-link-hover-color:              #fff;
+@offcanvas-panel-link-color:                    @white;
+@offcanvas-panel-link-hover-color:              @primary-color;
 @offcanvas-panel-title-color:                   @offcanvas-panel-link-color;
 
 
@@ -48,12 +48,17 @@
 .hook-offcanvas-misc;
 
 .hook-offcanvas() {
-  font-weight:400;
+  font-weight: 300;
+  font-family: @base-heading-font-family;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
 .hook-offcanvas-bar() {}
 .hook-offcanvas-panel() {}
 .hook-offcanvas-misc() {}
 
 .uk-nav-offcanvas > li > a, .uk-nav-offcanvas ul a{
-  font-size:14px;
+
 }
