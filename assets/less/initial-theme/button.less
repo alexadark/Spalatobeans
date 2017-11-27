@@ -69,7 +69,7 @@
 
 @button-primary-background:                     @primary-color;
 @button-primary-color:                          #fff;
-@button-primary-hover-background:               darken(@primary-color, 10%);
+@button-primary-hover-background:               lighten(@primary-color, 10%);
 @button-primary-hover-color:                    #fff;
 @button-primary-active-background:              @primary-color;
 @button-primary-active-color:                   #fff;
@@ -106,8 +106,10 @@
   font-weight:bold;
   letter-spacing: 1px;
 
+
 }
 .hook-button-hover() {
+  .box-shadow(@global-large-box-shadow)
 }
 .hook-button-active() {}
 .hook-button-primary() {
@@ -131,8 +133,12 @@
  input[type="button"]{
    .uk-button;
    .uk-button-primary;
+   font-family: @base-heading-font-family !important;
    color: @white !important;
+   font-weight: 300 !important;
+   cursor: pointer;
    &:hover{
      background: @button-primary-hover-background;
+     .box-shadow(@global-large-box-shadow)
    }
  }
