@@ -13,4 +13,7 @@ function wst_set_up_sidebars_structure() {
 	 //change sidebar width
 	beans_replace_attribute('beans_primary', 'class', 'uk-width-medium-3-4','uk-width-large-7-10 uk-width-medium-2-3');
 	beans_replace_attribute('beans_sidebar_primary', 'class', 'uk-width-medium-1-4','uk-width-large-3-10 uk-width-medium-1-3');
+
+
 }
+
