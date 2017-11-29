@@ -4,9 +4,10 @@
 
 //remove_theme_support( 'beans-default-styling' );
 
-$css_dev_styles = carbon_get_theme_option('crb_css_dev_mode');
+$css_dev_mode_enabled = (bool) get_option( 'css_dev_mode', false );
+//ddd($css_dev_mode_enabled);
 //Dev css
-if($css_dev_styles){
+if($css_dev_mode_enabled){
 add_action( 'wp_enqueue_scripts', 'wst_enqueue_dev_styles' );
 } else {
 //Prod css, autocompile

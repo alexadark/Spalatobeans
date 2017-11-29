@@ -25,10 +25,6 @@ function wst_set_up_header_structure() {
 	//sticky header
 	beans_add_attribute( 'beans_header', 'data-uk-sticky', "{top:-300, animation:'uk-animation-slide-top'}" );
 
-//	beans_wrap_markup( 'beans_header', 'beans_header_wrapper', 'div', array(
-//		'class' => 'tm-header-wrapper uk-cover-background',
-//	) );
-
 	add_action( 'beans_header_after_markup', 'wst_display_hero_area' );
 	function wst_display_hero_area() {
 		if(is_home()||is_archive()){
