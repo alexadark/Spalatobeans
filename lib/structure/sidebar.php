@@ -1,5 +1,5 @@
 <?php
-//add_action( 'wp', 'wst_set_up_sidebars_structure' );
+add_action( 'wp', 'wst_set_up_sidebars_structure' );
 /**
  * Set_up_sidebars_structure
  *
@@ -9,10 +9,24 @@
  */
 function wst_set_up_sidebars_structure() {
 	beans_add_attribute( 'beans_widget_panel', 'class', 'uk-panel-box' );
-	//change sidebar width
-	beans_replace_attribute('beans_primary', 'class', 'uk-width-medium-3-4','uk-width-large-7-10 uk-width-medium-2-3');
-	beans_replace_attribute('beans_sidebar_primary', 'class', 'uk-width-medium-1-4','uk-width-large-3-10 uk-width-medium-1-3');
-//	if(is_page_template())
+	add_action( 'beans_layout_grid_settings', 'wst_layout_grid_settings' );
+}
+
+/**
+ * Change layout settings
+ *
+ * @since 1.0.0
+ *
+ * @param $layouts
+ *
+ * @return array
+ */
+function wst_layout_grid_settings($layouts){
+	return array_merge( $layouts, array(
+		'grid' => 10,
+		'sidebar_primary' => 3,
+		'sidebar_secondary' => 3,
+	) );
 }
 
 
