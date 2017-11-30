@@ -8,7 +8,9 @@ add_action( 'wp', 'wst_set_up_sidebars_structure' );
  * @return void
  */
 function wst_set_up_sidebars_structure() {
+
 	beans_add_attribute( 'beans_widget_panel', 'class', 'uk-panel-box' );
+
 	add_action( 'beans_layout_grid_settings', 'wst_layout_grid_settings' );
 }
 
@@ -21,16 +23,18 @@ function wst_set_up_sidebars_structure() {
  *
  * @return array
  */
-function wst_layout_grid_settings($layouts){
+function wst_layout_grid_settings( $layouts ) {
+
 	return array_merge( $layouts, array(
-		'grid' => 10,
-		'sidebar_primary' => 3,
+		'grid'              => 10,
+		'sidebar_primary'   => 3,
 		'sidebar_secondary' => 3,
 	) );
 }
 
 
 add_action( 'widgets_init', 'wst_remove_secondary_sidebar' );
+
 /**
  * Unregister secondary sidebar
  *

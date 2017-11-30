@@ -1,6 +1,6 @@
 {% if post.thumbnail %}
     <div class="tm-hero-area uk-cover-background uk-flex uk-flex-center uk-flex-middle"
-         style="background-image: url({{ post.thumbnail }})">
+         style="background-image: url({{ post.thumbnail | e('esc_url') }})">
         {% if function('is_page') %}
             {{ function('beans_post_title') }}
         {% endif %}
