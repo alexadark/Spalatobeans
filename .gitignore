@@ -16,6 +16,11 @@ config.codekit3
 .AppleDouble
 .LSOverride
 
+/node_modules/
+/vendor/
+/logs/
+/reports/
+
 # Icon must end with two \r
 Icon
 
