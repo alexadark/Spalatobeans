@@ -7,7 +7,7 @@
  *
  * @return void
  */
-function init_constants() {
+function wst_init_constants() {
 	$child_theme = wp_get_theme();
 	define( 'CHILD_THEME_NAME', $child_theme->get( 'Name' ) );
 	define( 'CHILD_THEME_URL', $child_theme->get( 'ThemeURI' ) );
@@ -22,4 +22,4 @@ function init_constants() {
 
 }
 
-init_constants();
+wst_init_constants();
