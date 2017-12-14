@@ -34,28 +34,3 @@ function wst_add_new_image_sizes() {
 	}
 }
 
-//Timber
-
-// If the Timber plugin isn't activated, print a notice in the admin.
-if ( ! class_exists( 'Timber' ) ) {
-	add_action( 'admin_notices', function() {
-		echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php' ) ) . '</a></p></div>';
-	} );
-	return;
-}
-
-add_filter( 'timber_context', 'wst_add_to_context'  );
-/**
- * add post as timberPost
- *
- * @since 1.0.0
- *
- * @param $context
- *
- * @return mixed
- */
-function wst_add_to_context( $context ) {
-	$post               = new TimberPost();
-	$context['post']    = $post;
-	return $context;
-}

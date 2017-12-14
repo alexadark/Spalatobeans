@@ -35,8 +35,6 @@ function wst_load_admin_files() {
 	$filenames = array(
 		'components/customizer.php',
 		'components/options.php',
-		'components/class-tgm-plugin-activation.php'
-
 	);
 	wst_load_specified_files( $filenames );
 }
@@ -61,30 +59,3 @@ function wst_load_specified_files( array $filenames, $folder_root = '' ) {
 wst_load_nonadmin_files();
 wst_load_admin_files();
 
-
-
-add_action( 'tgmpa_register', 'wst_register_required_plugins' );
-
-/**
- * Register the required plugins for this theme.
- */
-function wst_register_required_plugins() {
-	/*
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
-	 */
-	$plugins = array(
-		array(
-			'name'      => 'Timber',
-			'slug'      => 'timber-library',
-			'required'  => true,
-		),
-
-
-
-	);
-
-
-
-	tgmpa( $plugins, $config );
-}
