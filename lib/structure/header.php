@@ -62,9 +62,7 @@ function wst_display_hero_area() {
 	if(is_home()||is_archive()){
 		return;
 	}
-	$context   = Timber::get_context();
-	$templates = array( 'hero.twig' );
-	Timber::render( $templates, $context );
 
+	include_once CHILD_THEME_DIR .'/views/hero.php';
 
 }
