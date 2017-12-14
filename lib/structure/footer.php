@@ -30,8 +30,5 @@ function wst_set_up_footer_structure() {
 beans_modify_action_callback( 'beans_footer_content', 'beans_child_footer_content' );
 
 function beans_child_footer_content() {
-	$context                = Timber::get_context(); //what is default role of this template ?
-	$context['year']        = date( 'Y' );
-	$templates              = array( 'footer.twig' );
-	Timber::render( $templates, $context ); //make ingredients ($context) available to this template
+	include_once CHILD_THEME_DIR .'/views/footer.php';
 }
